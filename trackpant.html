@@ -1,0 +1,435 @@
+<html>
+
+<head>
+
+<title>Track Pant</title>
+
+<meta charset="utf-8">
+
+<!-- ========================  BOOTSTRAP 4 ============================ -->
+
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+
+
+							  <!-- Login Signup -->
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>  
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+<!-- ========================  CSS ============================ -->
+<link rel="stylesheet" href="./css/index.css">
+<link rel="stylesheet" href="./css/item.css">
+
+
+
+
+<script>
+// Prevent dropdown menu from closing when click inside the form
+$(document).on("click", ".action-buttons .dropdown-menu", function(e){
+	e.stopPropagation();
+});
+</script>
+		
+</head>
+
+
+<body>
+<!--========================================= HEADER START ===================================-->		
+
+
+	<header class="mb-md-5 mb-2"> 
+		<nav id="nav-back" class="navbar navbar-expand-sm navbar-light  ">  
+		   
+			<a class="navbar-brand" href="index.html">
+				<img src="./images/logo/logo.png" width="100px" height="auto" alt="">
+			</a>
+		
+			<button type="button" class="navbar-toggler custom-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			
+			<!-- Collection of nav links, forms, and other content for toggling -->
+			
+		
+			<div id="navbarCollapse" class="collapse navbar-collapse nav-item ">
+				<div class="navbar-nav">			
+					<div class="nav-item dropdown">
+						<a href="#" id="nav-item-color" data-toggle="dropdown" class="nav-item nav-link dropdown-toggle"><span>Our Products</span></a>
+						<div class="dropdown-menu">					
+							<a href="trackpant.html" class="dropdown-item">Track Pants</a>
+							<a href="joggers.html" class="dropdown-item">Joggers</a>
+							<a href="sweatshirt.html" class="dropdown-item">Sweatshirts</a>
+							<a href="hoodies.html" class="dropdown-item">Hoddies</a>
+							<a href="highneck.html" class="dropdown-item">High Neck Jackets</a>
+						</div>
+					</div>
+					<a href="aboutus.html" id="nav-item-color" class="nav-item nav-link mx-md-5"><span>About Us</span></a>
+					<a href="#contact-us" id="nav-item-color" class="nav-item nav-link"><span>Contact Us</span></a>
+					
+				</div>
+			 
+			
+			 <!--     login signup    -->
+		
+		
+			<div id="" class=" navbar-nav ml-auto action-buttons">
+				<div class="nav-item dropdown">
+					<a href="#" data-toggle="dropdown" id="nav-item-color" class="nav-link dropdown-toggle mr-4"><span>Login</span></a>
+					<div class="dropdown-menu action-form">
+						<form action="/examples/actions/confirmation.php" method="post">
+							<p class="hint-text">Sign in with</p>
+							<div class="form-group social-btn clearfix">
+								<a href="#" class="btn btn-secondary facebook-btn float-left"><i class="fa fa-facebook"></i> Facebook</a>
+								<a href="#" class="btn btn-secondary twitter-btn float-right"><i class="fa fa-twitter"></i> Twitter</a>
+							</div>
+							<div class="or-seperator"><b>or</b></div>
+							<div class="form-group">
+								<input type="text" class="form-control" placeholder="Username" required="required">
+							</div>
+							<div class="form-group">
+								<input type="password" class="form-control" placeholder="Password" required="required">
+							</div>
+							<input type="submit" class="btn btn-primary btn-block" value="Login">
+							<div class="text-center mt-2">
+								<a href="#">Forgot Your password?</a>
+							</div>
+						</form>
+					</div>
+					
+				</div>
+				<div class="nav-item dropdown">
+					<a href="#" data-toggle="dropdown" class="btn btn-primary dropdown-toggle sign-up-btn"><span>Sign up</span></a>
+					<div class="dropdown-menu action-form">
+						<form action="/examples/actions/confirmation.php" method="post">
+							<p class="hint-text">Fill in this form to create your account!</p>
+							<div class="form-group">
+								<input type="text" class="form-control" placeholder="Username" required="required">
+							</div>
+							<div class="form-group">
+								<input type="password" class="form-control" placeholder="Password" required="required">
+							</div>
+							<div class="form-group">
+								<input type="password" class="form-control" placeholder="Confirm Password" required="required">
+							</div>
+							<div class="form-group">
+								<label class="form-check-label"><input type="checkbox" required="required"> I accept the <a href="#">Terms &amp; Conditions</a></label>
+							</div>
+							<input type="submit" class="btn btn-primary btn-block" value="Sign up">
+						</form>
+					</div>
+				</div>
+			</div>
+			
+			</div>
+		</nav>
+	</header>
+<!--========================================= HEADER END ===================================-->
+
+
+
+<div class="row col-sm-12 display-item">
+	<div class="col-md-1 col-lg-1 col-4 d-flex flex-column vertical-show">
+		<div id="" class="p-2" onclick="showImage(1)"> <img src="images/track-pant/dark/dark-a.jpg"> </div>
+		<div id="" class="p-2" onclick="showImage(2)"> <img src="images/track-pant/dark/dark-b.jpg" > </div>
+		<div id="" class="p-2" onclick="showImage(3)"> <img src="images/track-pant/dark/dark-c.jpg" > </div>
+		<div id="" class="p-2" onclick="showImage(4)"> <img src="images/track-pant/dark/dark-d.jpg" > </div>
+		<div id=""class="p-2" onclick="showImage(5)"> <img src="images/track-pant/dark/dark-e.jpg" > </div>
+		<div id="" class="p-2"  onclick="showImage(6)"> <img src="images/track-pant/dark/dark-f.jpg"> </div>
+		
+	</div>
+
+
+	<div class="col-md-3 col-lg-3 col-8  preview-image" id="preview-image" >
+		<img src="images/track-pant/dark/dark-a.jpg" style="display: block;" class="preview-track-pant-dark">
+		<img src="images/track-pant/dark/dark-b.jpg" class="preview-track-pant-dark">
+		<img src="images/track-pant/dark/dark-c.jpg" class="preview-track-pant-dark">
+		<img src="images/track-pant/dark/dark-d.jpg" class="preview-track-pant-dark">
+		<img src="images/track-pant/dark/dark-e.jpg" class="preview-track-pant-dark">
+		<img src="images/track-pant/dark/dark-f.jpg" class="preview-track-pant-dark">
+	</div>
+
+	<div class="col-md-1 col-0"></div>
+
+
+
+
+	<div class="col-md-7 col-12 item-details">
+		<span>MODERN FIT TRACK PANT</span>
+		<p>STYLE NO. TA-04 MODERN FIT TRACK PANT</p>
+		<div class="row specs">
+			<div class="col-md-1 col-2">
+				<p>FABRIC:</p>
+			</div>
+			<div class="col-md-11 col-10">
+				<p>100% COTTON</p>
+			</div>
+			
+		</div>
+		<div class="row specs">
+			<div class="col-md-1 col-2">
+				<p></p>
+			</div>
+			<div class="col-md-11 col-10">
+				<p>GSM : 100</p>
+			</div>
+			
+		</div>
+		<div class="row specs">
+			<div class="col-md-1 col-2">
+				<p>SIZES:</p>
+			</div>
+			<div class="col-md-11 col-10">
+				<p>S, M, L, XL, XXL, XXXL</p>
+			</div>
+			
+		</div>
+		<div class="row specs">
+			<div class="col-md-1 col-2">
+				<p>FIT:</p>
+			</div>
+			<div class="col-md-11 col-10">
+				<p>SLIM</p>
+			</div>
+			
+		</div>
+		
+		<div class="row specs">
+			<div class="col-md-1 col-2 color">
+				<p>COLORS</p>
+			</div>
+			<div class="col-md-11 col-10">
+			
+			</div>
+			
+		</div>
+		<div class="row specs">
+			<div class="col-md-3 col-12 item-color">
+				<span class="dot" id="black"></span>
+				<span class="dot" id="dark"></span>
+				<span class="dot" id="grey"></span>
+			</div>
+			<div class="col-md-9 ">
+			
+			</div>
+			
+		</div>
+		<div class="row specs">
+			<div class="col-md-1 col-2 item-mrp">
+				<p>MRP:</p>
+			</div>
+			<div class="col-md-11 col-10 item-mrp">
+				<p>700/-</p>
+			</div>
+			
+		</div>
+		
+	</div>
+</div>
+
+
+
+
+
+
+<!--
+
+
+<div class="container col-12">		
+	<div id="col1">
+	
+		<div class="icons" id="icon1" style="background-image: url('images/track-pant/grey-f.jpg'); background-size: cover;"> </div>
+		<div class="icons" id="icon2" style="background-image: url('images/track-pant/grey-f.jpg'); background-size: cover;"> </div>
+		<div class="icons" id="icon3" style="background-image: url('images/track-pant/grey-f.jpg'); background-size: cover;"> </div>
+		<div class="icons" id="icon4" style="background-image: url('images/track-pant/grey-f.jpg'); background-size: cover;"> </div>
+		<div class="icons" id="icon5" style="background-image: url('images/track-pant/grey-f.jpg'); background-size: cover;"> </div>
+		<div class="icons" id="icon6" style="background-image: url('images/track-pant/grey-f.jpg'); background-size: cover;"> </div>
+		<div class="preview" id="preview" style="background-image: url('images/track-pant/grey-f.jpg'); background-size: cover;"></div>
+		
+		<script type="text/javascript">
+		
+		document.getElementById("icon1").onclick = function(){
+		document.getElementById("preview").style.backgroundImage = document.getElementById("icon1").style.backgroundImage;
+		document.getElementById("preview").style.backgroundSize = "cover";
+		}
+		
+		document.getElementById("icon2").onclick = function(){
+		document.getElementById("preview").style.backgroundImage = document.getElementById("icon2").style.backgroundImage;
+		document.getElementById("preview").style.backgroundSize = "cover";
+		}
+		
+		document.getElementById("icon3").onclick = function(){
+		document.getElementById("preview").style.backgroundImage = document.getElementById("icon3").style.backgroundImage;
+		document.getElementById("preview").style.backgroundSize = "cover";
+		}
+		
+		document.getElementById("icon4").onclick = function(){
+		document.getElementById("preview").style.backgroundImage = document.getElementById("icon4").style.backgroundImage;
+		document.getElementById("preview").style.backgroundSize = "cover";
+		}
+		
+		document.getElementById("icon5").onclick = function(){
+		document.getElementById("preview").style.backgroundImage = document.getElementById("icon5").style.backgroundImage;
+		document.getElementById("preview").style.backgroundSize = "cover";
+		}
+		
+		document.getElementById("icon6").onclick = function(){
+		document.getElementById("preview").style.backgroundImage = document.getElementById("icon6").style.backgroundImage;
+		document.getElementById("preview").style.backgroundSize = "cover";
+		}
+		</script>
+	
+	<table>
+	<h2 id="productname" style="font-family: Neuropolitical;">MODERN FIT TRACK PANT<h2>
+	
+	<tr>
+	<td>STYLE NO</td>
+	<td>TA-04 MODERN FIT TRACK PANTS</td>
+	</tr>
+	
+	<tr>
+	<td>FABRIC</td>
+	<td>100% COTTON</td>
+	</tr>
+	
+	<tr>
+	<td></td>
+	<td>GSM : 100</td>
+	</tr>
+	
+	<tr>
+	<td>SIZES</td>
+	<td>S, M, L, XL, XXL, XXXL</td>
+	</tr>
+	
+	<tr>
+	<td>FIT</td>
+	<td>SLIM</td>
+	</tr>
+	
+	</table>
+	
+	<h4> COLORS </h4>
+	
+	<div class="color1" id="color1"></div>
+	<div class="color2" id="color2"></div>
+	<div class="color3" id="color3"></div>
+	
+	<script type="text/javascript">
+		
+		document.getElementById("color1").onclick = function(){
+			document.getElementById("icon1").style.backgroundImage = "url('images/track-pant/grey-f.jpg')";
+			document.getElementById("icon1").style.backgroundSize = "cover";
+			document.getElementById("preview").style.backgroundImage = "url('images/track-pant/grey-f.jpg')";
+			document.getElementById("icon1").style.backgroundSize = "cover";
+			document.getElementById("icon2").style.backgroundImage = "url('images/track-pant/grey-f.jpg')";
+			document.getElementById("icon2").style.backgroundSize = "cover";
+			document.getElementById("icon3").style.backgroundImage = "url('images/track-pant/grey-f.jpg')";
+			document.getElementById("icon3").style.backgroundSize = "cover";
+			document.getElementById("icon4").style.backgroundImage = "url('images/track-pant/grey-f.jpg')";
+			document.getElementById("icon4").style.backgroundSize = "cover";
+			document.getElementById("icon5").style.backgroundImage = "url('images/track-pant/grey-f.jpg')";
+			document.getElementById("icon5").style.backgroundSize = "cover";
+			document.getElementById("icon6").style.backgroundImage = "url('images/track-pant/grey-f.jpg')";
+			document.getElementById("icon6").style.backgroundSize = "cover";
+		}
+		
+		document.getElementById("color2").onclick = function(){
+			document.getElementById("icon1").style.backgroundImage = "url('images/track-pant/grey-f.jpg')";
+			document.getElementById("icon1").style.backgroundSize = "cover";
+			document.getElementById("preview").style.backgroundImage = "url('images/track-pant/grey-f.jpg')";
+			document.getElementById("icon1").style.backgroundSize = "cover";
+			document.getElementById("icon2").style.backgroundImage = "url('images/track-pant/grey-f.jpg')";
+			document.getElementById("icon2").style.backgroundSize = "cover";
+			document.getElementById("icon3").style.backgroundImage = "url('images/track-pant/grey-f.jpg')";
+			document.getElementById("icon3").style.backgroundSize = "cover";
+			document.getElementById("icon4").style.backgroundImage = "url('images/track-pant/grey-f.jpg')";
+			document.getElementById("icon4").style.backgroundSize = "cover";
+			document.getElementById("icon5").style.backgroundImage = "url('images/track-pant/grey-f.jpg')";
+			document.getElementById("icon5").style.backgroundSize = "cover";
+			document.getElementById("icon6").style.backgroundImage = "url('images/track-pant/grey-f.jpg')";
+			document.getElementById("icon6").style.backgroundSize = "cover";
+		}
+		
+		document.getElementById("color3").onclick = function(){
+			document.getElementById("icon1").style.backgroundImage = "url('images/track-pant/grey-f.jpg')";
+			document.getElementById("icon1").style.backgroundSize = "cover";
+			document.getElementById("preview").style.backgroundImage = "url('images/track-pant/grey-f.jpg')";
+			document.getElementById("icon1").style.backgroundSize = "cover";
+			document.getElementById("icon2").style.backgroundImage = "url('images/track-pant/grey-f.jpg')";
+			document.getElementById("icon2").style.backgroundSize = "cover";
+			document.getElementById("icon3").style.backgroundImage = "url('images/track-pant/grey-f.jpg')";
+			document.getElementById("icon3").style.backgroundSize = "cover";
+			document.getElementById("icon4").style.backgroundImage = "url('images/track-pant/grey-f.jpg')";
+			document.getElementById("icon4").style.backgroundSize = "cover";
+			document.getElementById("icon5").style.backgroundImage = "url('images/track-pant/grey-f.jpg')";
+			document.getElementById("icon5").style.backgroundSize = "cover";
+			document.getElementById("icon6").style.backgroundImage = "url('images/track-pant/grey-f.jpg')";
+			document.getElementById("icon6").style.backgroundSize = "cover";
+		}
+	</script>
+	
+	<h3 style="font-family: Neuropolitical"> MRP : 700/-</h3>
+	
+	</div>
+	
+</div>
+
+-->
+
+<!--========================================== FOOTER START ===================================-->		
+
+	<footer class="footer py-3 py-md-5">
+    
+		<div class="container">
+			<div class="row">
+				<div class="col-6 f-head">
+					<div class=" d-block "><span> CONTACT US</span></div>
+					<div class="d-block pd-1 pb-md-3"> <span>KASHYAP APPARELS</span></div>
+									
+				</div>
+				<div class="col-6"></div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class="col-12 col-md-6 f-content">
+					<div class="d-block"><span>Specialist in Customization</span></div>
+					<div class="d-block"><span>+91 97425 95677</span></div>
+					<div class="d-block"><span>+91 88926 17572</span></div>
+					
+					<div class="d-block py-3"><span>kashyapapparel@gmail.com</span></div>
+					
+					<div clss="d-block"><span>No.164, 5th Avenue Vishveshwaraiah<br>
+						Enclave,K G Halli, Jalahalli West,<br>
+						Bengaluru - 560 015</span></div>
+				
+				</div>
+			
+				<div class="col-12 col-md-6 f-content ">
+					
+						<div class="d-block pt-sm-3"><span>Manufactured and marketed by :</span></div>
+						<div class="d-block  pb-3"><span>KASHYAP APPARELS</span></div>
+						<div class="d-block"><span>Distribution partner:</span></div>
+						<div class="d-block  pb-3"><span>PRATHAM DISTRIBUTORS</span></div>
+						<div clss="d-block"><span>No.164, 5th Avenue Vishveshwaraiah<br>
+							Enclave,K G Halli, Jalahalli West,<br>
+							Bengaluru - 560 015</span></div>
+					
+				   
+				   
+				</div>
+				
+			</div>
+		</div>
+		
+		
+		</footer>
+<!--========================================== FOOTER END ===================================-->		
+
+<script src="./Js/preview_image.js"></script>
+
+</body>
+
+
+</html>

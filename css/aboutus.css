@@ -1,0 +1,12 @@
+body{
+    background-color: lightgrey;
+}
+.container .about-us span{
+    font-size: calc(1.4em + .5vmin);
+    font-family: Century Gothic;
+    
+    
+}
+.border{
+    background-color: white;
+}
