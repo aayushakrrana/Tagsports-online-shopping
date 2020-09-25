@@ -79,8 +79,8 @@ Toggler
 	box-shadow: 0 2px 8px rgba(0,0,0,.05);
 }
 .navbar a, .navbar a:active {
-	color: #888;
-	padding: 8px 20px;
+	color: rgb(0, 0, 0);
+	/*padding: 8px 20px;*/
 	background: transparent;
 	line-height: normal;
 }
@@ -205,6 +205,13 @@ Login signup
 	
 }
 
+
+
+
+
+
+
+
 /*****
 Heading Our Product
 *************/
@@ -225,6 +232,27 @@ Heading Our Product
     justify-content: center;	
 }
 
+.main-item img:hover{
+	box-shadow: 0px 0px 9px 1px #000000;
+}
+
+
+
+.main-item a{
+	color: black;
+}
+
+
+
+
+
+
+/*
+****************
+FOOTER
+****************
+*/
+
 .footer{
 	background-color: black;
 	color: white;
@@ -235,11 +263,11 @@ Heading Our Product
 	list-style: none;
 }
 .footer .container .row .f-head span{
-  font-size: calc(0.75em + 1vmin);
+  font-size: calc(0.87em + 1vmin);
 }
 .footer .container .row .f-content span{
 	font-size: calc(0.75em + .8vmin);
-	font-family: Century Gothic;
+	
 }
 
 .container .main-item .border{

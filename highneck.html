@@ -4,6 +4,8 @@
 
 <title>Jackets</title>
 
+<link rel="icon" href="images/logo/cart.png" type="image/x-icon">
+
 <meta charset="utf-8">
 
 <!-- ========================  BOOTSTRAP 4 ============================ -->
@@ -127,33 +129,94 @@ $(document).on("click", ".action-buttons .dropdown-menu", function(e){
 <!--========================================= HEADER END ===================================-->
 
 
+	<div class="row col-sm-12 display-item main">
 
-<div class="row col-sm-12 display-item">
-	<div class="col-md-1 col-lg-1 col-4 d-flex flex-column vertical-show">
-		<div id="" class="p-2" onclick="showImage(1)"> <img src="images/jacket/grey/grey-a.jpg"> </div>
-		<div id="" class="p-2" onclick="showImage(2)"> <img src="images/jacket/grey/grey-b.jpg" > </div>
-		<div id="" class="p-2" onclick="showImage(3)"> <img src="images/jacket/grey/grey-c.jpg" > </div>
-		<div id="" class="p-2" onclick="showImage(4)"> <img src="images/jacket/grey/grey-d.jpg" > </div>
-		<div id="" class="p-2" onclick="showImage(5)"> <img src="images/jacket/grey/grey-e.jpg" > </div>
-		<!--<div id="" class="p-2"  onclick="showImage(6)"> <img src="images/track-pant/dark/dark-f.jpg"> </div>-->
+		<div class="col-md-4 col-lg-4 col-12 row" id="grey-div" style="display: none;">
+	
+	
+			<div class="col-md-4 col-lg-4 col-4  flex-column vertical-show">
+				<div id="" class="p-2" onclick="showImage_Grey(1)"> <img src="images/jacket/grey/grey-a.jpg"> </div>
+				<div id="" class="p-2" onclick="showImage_Grey(2)"> <img src="images/jacket/grey/grey-b.jpg" > </div>
+				<div id="" class="p-2" onclick="showImage_Grey(3)"> <img src="images/jacket/grey/grey-c.jpg" > </div>
+				<div id="" class="p-2" onclick="showImage_Grey(4)"> <img src="images/jacket/grey/grey-d.jpg" > </div>
+				<div id="" class="p-2" onclick="showImage_Grey(5)"> <img src="images/jacket/grey/grey-e.jpg" > </div>
+				
+			</div>
+	
+			<div class="col-md-8 col-lg-8 col-8  preview-image" id="preview-image" >
+				<img src="images/jacket/grey/grey-a.jpg" style="display: block;" class="preview-track-pant-grey">
+				<img src="images/jacket/grey/grey-b.jpg" class="preview-track-pant-grey">
+				<img src="images/jacket/grey/grey-c.jpg" class="preview-track-pant-grey">
+				<img src="images/jacket/grey/grey-d.jpg" class="preview-track-pant-grey">
+				<img src="images/jacket/grey/grey-e.jpg" class="preview-track-pant-grey">
+				</div>
+	
+		</div>
+	
+	
+	
+	
+		<div class="col-md-4 col-lg-4 col-12 row" id="black-div" style="display: flex;">
+	
+			<div class="col-md-4 col-lg-4 col-4  flex-column vertical-show">
+				
+				<div id="" class="p-2 track-pant-dark" onclick="showImage_Black(1)"> <img src="images/jacket/black/black-a.jpg"> </div>
+				<div id="" class="p-2 track-pant-dark" onclick="showImage_Black(2)"> <img src="images/jacket/black/black-b.jpg" > </div>
+				<div id="" class="p-2 track-pant-dark" onclick="showImage_Black(3)"> <img src="images/jacket/black/black-c.jpg" > </div>
+				<div id="" class="p-2 track-pant-dark" onclick="showImage_Black(4)"> <img src="images/jacket/black/black-d.jpg" > </div>
+				<div id=""class="p-2 track-pant-dark"  onclick="showImage_Black(5)"> <img src="images/jacket/black/black-e.jpg" > </div>
+								
+			</div>
+	
+			<div class="col-md-8 col-lg-8 col-8  preview-image" id="preview-image" >
+				<img src="images/jacket/black/black-a.jpg" style="display: block;" class="preview-track-pant-black">
+				<img src="images/jacket/black/black-b.jpg" class="preview-track-pant-black">
+				<img src="images/jacket/black/black-c.jpg" class="preview-track-pant-black">
+				<img src="images/jacket/black/black-d.jpg" class="preview-track-pant-black">
+				<img src="images/jacket/black/black-e.jpg" class="preview-track-pant-black">
 		
-	</div>
+			</div>
+	
+		</div>
+	
+	
+	
+		<div class="col-md-4 col-lg-4 col-12 row" id="blue-div" style="display: none;">
+	
+			<div class="col-md-4 col-lg-4 col-4  flex-column vertical-show">
+				
+				<div id="" class="p-2 track-pant-dark" onclick="showImage_Blue(1)"> <img src="images/jacket/blue/blue-a.jpg"> </div>
+				<div id="" class="p-2 track-pant-dark" onclick="showImage_Blue(2)"> <img src="images/jacket/blue/blue-b.jpg" > </div>
+				<div id="" class="p-2 track-pant-dark" onclick="showImage_Blue(3)"> <img src="images/jacket/blue/blue-c.jpg" > </div>
+				<div id="" class="p-2 track-pant-dark" onclick="showImage_Blue(4)"> <img src="images/jacket/blue/blue-d.jpg" > </div>
+				<div id=""class="p-2 track-pant-dark"  onclick="showImage_Blue(5)"> <img src="images/jacket/blue/blue-e.jpg" > </div>
+				
+			</div>
+	
+			<div class="col-md-8 col-lg-8 col-8  preview-image" id="preview-image" >
+				<img src="images/jacket/blue/blue-a.jpg" style="display: block;" class="preview-track-pant-blue">
+				<img src="images/jacket/blue/blue-b.jpg" class="preview-track-pant-blue">
+				<img src="images/jacket/blue/blue-c.jpg" class="preview-track-pant-blue">
+				<img src="images/jacket/blue/blue-d.jpg" class="preview-track-pant-blue">
+				<img src="images/jacket/blue/blue-e.jpg" class="preview-track-pant-blue">
+			
+			</div>
+	
+		</div>
+	
+	
 
 
-	<div class="col-md-3 col-lg-3 col-8  preview-image" id="preview-image" >
-		<img src="images/jacket/grey/grey-a.jpg" style="display: block;" class="preview-track-pant-dark">
-		<img src="images/jacket/grey/grey-b.jpg" class="preview-track-pant-dark">
-		<img src="images/jacket/grey/grey-c.jpg" class="preview-track-pant-dark">
-		<img src="images/jacket/grey/grey-d.jpg" class="preview-track-pant-dark">
-		<img src="images/jacket/grey/grey-e.jpg" class="preview-track-pant-dark">
-		<!--<img src="images/jacket/grey/grey-f.jpg" class="preview-track-pant-dark">-->
 
-	</div>
+
+
+
+
+
+
+
 
 	<div class="col-md-1 col-0"></div>
-
-
-
 
 	<div class="col-md-7 col-12 item-details">
 		<span>HIGH NECK JACKETS</span>
@@ -169,10 +232,10 @@ $(document).on("click", ".action-buttons .dropdown-menu", function(e){
 		</div>
 		<div class="row specs">
 			<div class="col-md-1 col-2">
-				<p></p>
+				<p>GSM:</p>
 			</div>
 			<div class="col-md-11 col-10">
-				<p>GSM : 100</p>
+				<p> 100</p>
 			</div>
 			
 		</div>
@@ -206,15 +269,15 @@ $(document).on("click", ".action-buttons .dropdown-menu", function(e){
 		</div>
 		<div class="row specs">
 			<div class="col-md-3 col-12 item-color">
-				<span class="dot" id="black"></span>
-				<span class="dot" id="blue"></span>
-				<span class="dot" id="grey"></span>
+				<span class="dot" onclick="openBlackDiv3()" id="black"></span>
+				<span class="dot" onclick= "openBlueDiv3()" id="blue"></span>
+				<span class="dot" onclick="openGreyDiv3()" id="grey"></span>
 			</div>
 			<div class="col-md-9 ">
 			
 			</div>
-			
 		</div>
+
 		<div class="row specs">
 			<div class="col-md-1 col-2 item-mrp">
 				<p>MRP:</p>
@@ -231,154 +294,9 @@ $(document).on("click", ".action-buttons .dropdown-menu", function(e){
 
 
 
-<!--
-
-
-<div class="container col-12">		
-	<div id="col1">
-	
-		<div class="icons" id="icon1" style="background-image: url('images/track-pant/grey-f.jpg'); background-size: cover;"> </div>
-		<div class="icons" id="icon2" style="background-image: url('images/track-pant/grey-f.jpg'); background-size: cover;"> </div>
-		<div class="icons" id="icon3" style="background-image: url('images/track-pant/grey-f.jpg'); background-size: cover;"> </div>
-		<div class="icons" id="icon4" style="background-image: url('images/track-pant/grey-f.jpg'); background-size: cover;"> </div>
-		<div class="icons" id="icon5" style="background-image: url('images/track-pant/grey-f.jpg'); background-size: cover;"> </div>
-		<div class="icons" id="icon6" style="background-image: url('images/track-pant/grey-f.jpg'); background-size: cover;"> </div>
-		<div class="preview" id="preview" style="background-image: url('images/track-pant/grey-f.jpg'); background-size: cover;"></div>
-		
-		<script type="text/javascript">
-		
-		document.getElementById("icon1").onclick = function(){
-		document.getElementById("preview").style.backgroundImage = document.getElementById("icon1").style.backgroundImage;
-		document.getElementById("preview").style.backgroundSize = "cover";
-		}
-		
-		document.getElementById("icon2").onclick = function(){
-		document.getElementById("preview").style.backgroundImage = document.getElementById("icon2").style.backgroundImage;
-		document.getElementById("preview").style.backgroundSize = "cover";
-		}
-		
-		document.getElementById("icon3").onclick = function(){
-		document.getElementById("preview").style.backgroundImage = document.getElementById("icon3").style.backgroundImage;
-		document.getElementById("preview").style.backgroundSize = "cover";
-		}
-		
-		document.getElementById("icon4").onclick = function(){
-		document.getElementById("preview").style.backgroundImage = document.getElementById("icon4").style.backgroundImage;
-		document.getElementById("preview").style.backgroundSize = "cover";
-		}
-		
-		document.getElementById("icon5").onclick = function(){
-		document.getElementById("preview").style.backgroundImage = document.getElementById("icon5").style.backgroundImage;
-		document.getElementById("preview").style.backgroundSize = "cover";
-		}
-		
-		document.getElementById("icon6").onclick = function(){
-		document.getElementById("preview").style.backgroundImage = document.getElementById("icon6").style.backgroundImage;
-		document.getElementById("preview").style.backgroundSize = "cover";
-		}
-		</script>
-	
-	<table>
-	<h2 id="productname" style="font-family: Neuropolitical;">MODERN FIT TRACK PANT<h2>
-	
-	<tr>
-	<td>STYLE NO</td>
-	<td>TA-04 MODERN FIT TRACK PANTS</td>
-	</tr>
-	
-	<tr>
-	<td>FABRIC</td>
-	<td>100% COTTON</td>
-	</tr>
-	
-	<tr>
-	<td></td>
-	<td>GSM : 100</td>
-	</tr>
-	
-	<tr>
-	<td>SIZES</td>
-	<td>S, M, L, XL, XXL, XXXL</td>
-	</tr>
-	
-	<tr>
-	<td>FIT</td>
-	<td>SLIM</td>
-	</tr>
-	
-	</table>
-	
-	<h4> COLORS </h4>
-	
-	<div class="color1" id="color1"></div>
-	<div class="color2" id="color2"></div>
-	<div class="color3" id="color3"></div>
-	
-	<script type="text/javascript">
-		
-		document.getElementById("color1").onclick = function(){
-			document.getElementById("icon1").style.backgroundImage = "url('images/track-pant/grey-f.jpg')";
-			document.getElementById("icon1").style.backgroundSize = "cover";
-			document.getElementById("preview").style.backgroundImage = "url('images/track-pant/grey-f.jpg')";
-			document.getElementById("icon1").style.backgroundSize = "cover";
-			document.getElementById("icon2").style.backgroundImage = "url('images/track-pant/grey-f.jpg')";
-			document.getElementById("icon2").style.backgroundSize = "cover";
-			document.getElementById("icon3").style.backgroundImage = "url('images/track-pant/grey-f.jpg')";
-			document.getElementById("icon3").style.backgroundSize = "cover";
-			document.getElementById("icon4").style.backgroundImage = "url('images/track-pant/grey-f.jpg')";
-			document.getElementById("icon4").style.backgroundSize = "cover";
-			document.getElementById("icon5").style.backgroundImage = "url('images/track-pant/grey-f.jpg')";
-			document.getElementById("icon5").style.backgroundSize = "cover";
-			document.getElementById("icon6").style.backgroundImage = "url('images/track-pant/grey-f.jpg')";
-			document.getElementById("icon6").style.backgroundSize = "cover";
-		}
-		
-		document.getElementById("color2").onclick = function(){
-			document.getElementById("icon1").style.backgroundImage = "url('images/track-pant/grey-f.jpg')";
-			document.getElementById("icon1").style.backgroundSize = "cover";
-			document.getElementById("preview").style.backgroundImage = "url('images/track-pant/grey-f.jpg')";
-			document.getElementById("icon1").style.backgroundSize = "cover";
-			document.getElementById("icon2").style.backgroundImage = "url('images/track-pant/grey-f.jpg')";
-			document.getElementById("icon2").style.backgroundSize = "cover";
-			document.getElementById("icon3").style.backgroundImage = "url('images/track-pant/grey-f.jpg')";
-			document.getElementById("icon3").style.backgroundSize = "cover";
-			document.getElementById("icon4").style.backgroundImage = "url('images/track-pant/grey-f.jpg')";
-			document.getElementById("icon4").style.backgroundSize = "cover";
-			document.getElementById("icon5").style.backgroundImage = "url('images/track-pant/grey-f.jpg')";
-			document.getElementById("icon5").style.backgroundSize = "cover";
-			document.getElementById("icon6").style.backgroundImage = "url('images/track-pant/grey-f.jpg')";
-			document.getElementById("icon6").style.backgroundSize = "cover";
-		}
-		
-		document.getElementById("color3").onclick = function(){
-			document.getElementById("icon1").style.backgroundImage = "url('images/track-pant/grey-f.jpg')";
-			document.getElementById("icon1").style.backgroundSize = "cover";
-			document.getElementById("preview").style.backgroundImage = "url('images/track-pant/grey-f.jpg')";
-			document.getElementById("icon1").style.backgroundSize = "cover";
-			document.getElementById("icon2").style.backgroundImage = "url('images/track-pant/grey-f.jpg')";
-			document.getElementById("icon2").style.backgroundSize = "cover";
-			document.getElementById("icon3").style.backgroundImage = "url('images/track-pant/grey-f.jpg')";
-			document.getElementById("icon3").style.backgroundSize = "cover";
-			document.getElementById("icon4").style.backgroundImage = "url('images/track-pant/grey-f.jpg')";
-			document.getElementById("icon4").style.backgroundSize = "cover";
-			document.getElementById("icon5").style.backgroundImage = "url('images/track-pant/grey-f.jpg')";
-			document.getElementById("icon5").style.backgroundSize = "cover";
-			document.getElementById("icon6").style.backgroundImage = "url('images/track-pant/grey-f.jpg')";
-			document.getElementById("icon6").style.backgroundSize = "cover";
-		}
-	</script>
-	
-	<h3 style="font-family: Neuropolitical"> MRP : 700/-</h3>
-	
-	</div>
-	
-</div>
-
--->
-
 <!--========================================== FOOTER START ===================================-->		
 
-	<footer class="footer py-3 py-md-5">
+	<footer id="contact-us" class="footer py-3 py-md-5">
     
 		<div class="container">
 			<div class="row">
